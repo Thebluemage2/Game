@@ -14,6 +14,8 @@ public class ChunkScript : MonoBehaviour {
 
 	public BlockScript blockS;
 
+	public GameObject mainCamera;
+
 	public int ChunkSize;
 
 	void Start () {
@@ -39,5 +41,34 @@ public class ChunkScript : MonoBehaviour {
 			}
 		}
 	}
+
+		mainCamera = GameObject.Find("Camera");
+	}
+
+
+	void Update(){
+
+
+
+		/*
+		if(((gameObject.transform.position.x - mainCamera.transform.position.x) >= 6) && ((gameObject.transform.position.y - mainCamera.transform.position.y) >= 6)){
+			gameObject.SetActive(false);
+			Debug.Log ("X: " + gameObject.transform.position.x + " " + mainCamera.transform.position.x);
+			Debug.Log ("Y: " + gameObject.transform.position.y + " " + mainCamera.transform.position.y);
+			Debug.Log ("Math: " + (gameObject.transform.position.x - mainCamera.transform.position.x));
+		}
+		else if(((gameObject.transform.position.x - mainCamera.transform.position.x) <= -6) && ((gameObject.transform.position.y - mainCamera.transform.position.y) <= -6)){
+			gameObject.SetActive(false);
+			Debug.Log ("X: " + gameObject.transform.position.x + " " + mainCamera.transform.position.x);
+			Debug.Log ("Y: " + gameObject.transform.position.y + " " + mainCamera.transform.position.y);
+			Debug.Log ("Math: " + (gameObject.transform.position.x - mainCamera.transform.position.x));
+		}
+		else{
+			gameObject.SetActive(true);
+		}
+		*/
+
+
+
 	}
 }

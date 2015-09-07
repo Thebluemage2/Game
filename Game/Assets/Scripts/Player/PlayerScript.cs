@@ -30,9 +30,9 @@ public class PlayerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		woodText.text = "Wood: " + wood;
+		//woodText.text = "Wood: " + wood;
 		mouse = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
-
+		Cursor.visible = false;
 		houseName.text = name;
 	}
 
